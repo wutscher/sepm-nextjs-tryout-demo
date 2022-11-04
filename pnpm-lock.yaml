@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@playwright/test': ^1.27.1
   '@prisma/client': ^4.5.0
   '@types/node': 18.11.9
   '@types/react': 18.0.24
@@ -13,6 +14,7 @@ specifiers:
   prisma: ^4.5.0
   react: 18.2.0
   react-dom: 18.2.0
+  server-only: ^0.0.1
   sqlite: ^4.1.2
   tailwindcss: ^3.2.1
   ts-node: ^10.9.1
@@ -28,10 +30,12 @@ dependencies:
   next: 13.0.1_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  server-only: 0.0.1
   sqlite: 4.1.2
   typescript: 4.8.4
 
 devDependencies:
+  '@playwright/test': 1.27.1
   autoprefixer: 10.4.13_postcss@8.4.18
   postcss: 8.4.18
   prisma: 4.5.0
@@ -259,6 +263,15 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.13.0
+
+  /@playwright/test/1.27.1:
+    resolution: {integrity: sha512-mrL2q0an/7tVqniQQF6RBL2saskjljXzqNcCOVMUjRIgE6Y38nCNaP+Dc2FBW06bcpD3tqIws/HT9qiMHbNU0A==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dependencies:
+      '@types/node': 18.11.9
+      playwright-core: 1.27.1
+    dev: true
 
   /@prisma/client/4.5.0_prisma@4.5.0:
     resolution: {integrity: sha512-B2cV0OPI1smhdYUxsJoLYQLoMlLH06MUxgFUWQnHodGMX98VRVXKmQE/9OcrTNkqtke5RC+YU24Szxd04tZA2g==}
@@ -1780,6 +1793,12 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  /playwright-core/1.27.1:
+    resolution: {integrity: sha512-9EmeXDncC2Pmp/z+teoVYlvmPWUC6ejSSYZUln7YaP89Z6lpAaiaAnqroUt/BoLo8tn7WYShcfaCh+xofZa44Q==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: true
+
   /postcss-import/14.1.0_postcss@8.4.18:
     resolution: {integrity: sha512-flwI+Vgm4SElObFVPpTIT7SU7R3qk2L7PyduMcokiaVKuWv9d/U+Gm/QAd8NDLuykTWTkcrjOeD2Pp1rMeBTGw==}
     engines: {node: '>=10.0.0'}
@@ -2009,6 +2028,10 @@ packages:
     hasBin: true
     dependencies:
       lru-cache: 6.0.0
+    dev: false
+
+  /server-only/0.0.1:
+    resolution: {integrity: sha512-qepMx2JxAa5jjfzxG79yPPq+8BuFToHd1hm7kI+Z4zAq1ftQiP7HcxMhDDItrbtwVeLg/cY2JnKnrcFkmiswNA==}
     dev: false
 
   /shebang-command/2.0.0:

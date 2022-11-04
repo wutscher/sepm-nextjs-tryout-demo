@@ -1,7 +1,5 @@
-import { PrismaClient, Note } from '@prisma/client';
+import { prisma } from "../../utils/database"
 import { NextApiRequest, NextApiResponse } from 'next';
-
-const prisma = new PrismaClient()
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
