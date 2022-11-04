@@ -3,5 +3,22 @@
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "vsicons.associations.files": [
     // { "icon": "angular",  "extensions": ["loading.tsx"], "filename": true, "format": "svg" }
-  ]
+  ],
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns":{
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    //"layout.tsx": "page.tsx", //TODO: evaluate
+    "page.tsx": "loading.tsx, error.tsx, head.tsx, *.tsx",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml",
+    "tailwind.config.js": "postcss.config.js",
+    "Dockerfile": ".dockerignore"
+  },
+  "files.exclude": {
+    "node_modules/": true
+  }
 }

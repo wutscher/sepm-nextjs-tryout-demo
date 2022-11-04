@@ -9,6 +9,7 @@
     "test": "jest --watch",
     "test:e2e": "playwright test",
     "lint": "next lint",
+    "setup":"prisma generate && prisma migrate dev && prisma db seed",
     "prisma": "prisma"
   },
   "dependencies": {

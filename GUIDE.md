@@ -7,6 +7,9 @@
 5. [TailwindCSS](https://tailwindcss.com/)
 6. [Playwright](https://playwright.dev/)
 
+# Workspace
+
+
 # Setup
 
 ```bash
