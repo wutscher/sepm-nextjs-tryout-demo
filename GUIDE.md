@@ -15,6 +15,7 @@ pnpm install
 
 # setup database
 pnpm run prisma generate
+pnpm run prisma migrate dev
 ```
 
 

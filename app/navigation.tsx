@@ -9,9 +9,9 @@ export default function Navigation() {
     <div className="relative flex h-16 items-center justify-between">
       <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
           <div className="flex flex-shrink-0 items-center">
-            <Link href="/">
+            <a href="/">
               <Image className="hidden h-8 w-auto lg:block" src="/mark.svg" width={500} height={500} alt="Your Company" />
-            </Link>
+            </a>
           </div>
         <div className="hidden sm:ml-6 sm:block">
           <div className="flex space-x-4">
