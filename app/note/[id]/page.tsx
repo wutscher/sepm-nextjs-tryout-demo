@@ -1,5 +1,5 @@
-import { NoteCard } from "../../../components/note";
-import { prisma } from "../../../utils/database";
+import { NoteCard } from "../../../src/components/note";
+import { prisma } from "../../../src/utils/database";
 
 export default async function NotePage({ params, searchParams }){
 

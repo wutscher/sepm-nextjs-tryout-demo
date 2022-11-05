@@ -1,7 +1,7 @@
 import "server-only"
 import { Note } from '@prisma/client';
 import CreateNote from './createNote';
-import { NoteCard } from '../../components/note'
+import { NoteCard } from '../../src/components/note'
 
 async function getNotes() {
   const res = await fetch('http://localhost:3000/api/getNotes', {cache: 'no-store'});

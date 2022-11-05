@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import HomePage from '../app/page'
 import '@testing-library/jest-dom'
-import getNotes from '../pages/api/getNotes'
+import getNotes from '../src/pages/api/getNotes'
 import { NextApiRequest } from 'next'
 
 describe('Home', () => {

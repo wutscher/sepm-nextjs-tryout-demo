@@ -17,24 +17,34 @@
 pnpm install
 
 # setup database
-pnpm run prisma generate
-pnpm run prisma migrate dev
+pnpm prisma generate
+pnpm prisma migrate dev
 ```
 
 
 # View data
 
 ```bash
-pnpm run prisma studio
+pnpm prisma studio
 ```
 
 # Seed
 ```bash
-pnpm run prisma db seed
+pnpm prisma db seed
 ```
 
 # Data model change
 
 ```bash
-pnpm run prisma migrate --name=changeXX
+pnpm prisma migrate --name=changeXX
+```
+
+# Test
+```bash
+pnpm test
+```
+
+# Run
+```bash
+pnpm dev
 ```

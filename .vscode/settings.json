@@ -16,9 +16,11 @@
     "tsconfig.json": "tsconfig.*.json",
     "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml",
     "tailwind.config.js": "postcss.config.js",
-    "Dockerfile": ".dockerignore"
+    "Dockerfile": ".dockerignore",
+    "next.config.js": ".env, .eslintrc.json, jest.config.js, next-env.d.ts, tailwind.config.js, tsconfig.json"
   },
   "files.exclude": {
-    "node_modules/": true
+    "node_modules/": true,
+    ".next": true
   }
 }
