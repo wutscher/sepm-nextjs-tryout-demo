@@ -21,6 +21,7 @@
   },
   "files.exclude": {
     "node_modules/": true,
-    ".next": true
+    ".next": true,
+    ".swc": true
   }
 }
