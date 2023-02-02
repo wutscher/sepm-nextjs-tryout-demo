@@ -9,16 +9,30 @@
 
 # Workspace
 
+# Recommended Plugins
 
-# Setup
+# File Structure
 
-```bash
-# download modules
-pnpm install
-
-# setup database
-pnpm prisma generate
-pnpm prisma migrate dev
+```
+<ROOT>
+│
+└─ app      <-- Frontend (Server / Client Components)
+│
+└─ public   <-- static resources (images, robots.txt, etc.)
+│
+└─ src      <-- Non-Frontent Route code
+   │
+   └─ components  <-- Reused components
+   │
+   └─ pages       <-- mostly replaced by /app except for api
+   |  │
+   |  └─ api      <-- Rest Routes
+   │
+   └─ prisma      <-- Database
+   │
+   └─ styles      <-- Stylesheets
+   │
+   └─ utils       <-- Utility functions (Database Singleton, getX, getY, etc.)
 ```
 
 

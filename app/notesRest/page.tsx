@@ -1,6 +1,6 @@
 import "server-only"
 import { Note } from '@prisma/client';
-import CreateNote from './createNote';
+import CreateNote from '../../src/components/createNote';
 import { NoteCard } from '../../src/components/note'
 
 async function getNotes() {

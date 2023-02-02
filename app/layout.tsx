@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Navigation from "./navigation"
-
+import './globals.css';
 
 export default function RootLayout({
   children,
